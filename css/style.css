@@ -25,7 +25,7 @@ body{
 }
 
 .container{
-    max-width: 1560px;
+    width: 1560px;
     margin: auto;
     padding: 0 1rem;
 }
@@ -87,10 +87,12 @@ body{
     flex-basis: 100%;
     max-width: 100%;
 }
+.h100{ height: 100%;}
 .flex{ display: flex;}
 .justify-right{ justify-content: right;}
 .space-bet{ justify-content: space-between;}
 .align-center{ align-items: center;}
+.img-resp{ max-width: 100%; height: auto;}
 
 
 /* layout */
@@ -101,15 +103,36 @@ body{
 .menu span{display: block; height: 2px; background: #fff; width: 20px; margin: 4px auto;}
 .wrap-1 a:hover{ color: #999;}
 h1{ text-align: center; font-size: 22px;}
+header div.flex{ display: none;}
+header input{ display: none;}
 
 
 
 
+.wrap-2{ background: linear-gradient(180deg, #212429 50%, #ffff 50%); }
+.slider{ position: relative;}
+.slide{ display: none; }
+.slide.active{ display: block;}
+.slide figcaption{ position: absolute; left: 100px; top: 50%; color: #fff; transform: translateY(-50%); width: 30%;}
+.wrap-2 h2{ font-size: 40px;}
+.pager{position: absolute; transform: rotate(-90deg); right: 0; top: 50%; color: #fff; }
+.pager ul{ justify-content: center; flex-direction: row-reverse;  }
+.pager li{ margin: 5px; }
+.pager a{ display: block; width: 8px; height: 8px; border: 1px solid #fff;}
+.pager a.active{ background: #999; }
+
+
+
+.wrap-3{ background: #f9f9f9;}
+.wrap-3 form{ padding: 27px 0 0 0;}
+.wrap-3 h3{}
+.wrap-3 input{ width: 100%; height: 50px; background: #fff; border: none; padding: 10px; margin-bottom: 23px;}
+.wrap-3 button{width: 100%; height: 50px; background: #212121; color: #fff; border: none; margin-bottom: 23px;}
 
 
 
 @media screen and (max-width:1580px){
-
+    .container{width: 100%;}
 }
 
 @media screen and (max-width:1220px){
@@ -124,7 +147,7 @@ h1{ text-align: center; font-size: 22px;}
     .col-t-4{flex-basis: 33.33%; max-width: 33.33%;}
     .col-t-6{flex-basis: 50%; max-width: 50%;}
     .col-t-12{flex-basis: 100%; max-width: 100%;}
-
+    .slide figcaption{ width: 50%;}
 }
 
 @media screen and (max-width:767px){
@@ -139,7 +162,11 @@ h1{ text-align: center; font-size: 22px;}
     .col-p-4{flex-basis: 33.33%; max-width: 33.33%;}
     .col-p-6{flex-basis: 50%; max-width: 50%;}
     .col-p-12{flex-basis: 100%; max-width: 100%;}
-    .header-list{ display:none;}
-    
+    .header-list{ display:none; position: absolute; width: 100%; left: 0; right: 0; background: #212429;}
+    header div.flex{ display:flex;}
+    header input:checked+.header-list{ display: block;}
+    .slide figcaption{ width: 70%; left: 20px;}
+    .slide figcaption h2{ font-size: 20px;}
+    .pager{ transform: rotate(0); bottom: 0; top: auto;  }
 }
 

@@ -18,7 +18,11 @@
                     <h1><a href="">D <span class="fa fa-align-justify"></span> COBLOG</a></h1>
                 </div>
                 <div class="col-4 col-t-6 col-p-3">
-                    <div class="header-list">
+                        <div class="flex justify-right align-center h100">
+                            <label for="chk"><span class="fa fa-ellipsis-v fa-2x"></span></label>
+                        </div>
+                        <input type="checkbox" id="chk">
+                        <div class="header-list">
                         <ul class="flex justify-right">
                             <li><a href=""><span class="fa fa-rss"></span></a></li>
                             <li><a href=""><span class="fab fa-twitter"></span></a></li>
@@ -31,5 +35,58 @@
             </div>
         </div>
     </header>
+    <div class="wrap-2" role="banner">
+        <div class="container">
+            <div class="slider">               
+                <div class="slide active">
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="img/banner-1-sm.webp">
+                            <img src="img/banner-1.webp" alt="" width="1530" height="580" class="img-resp">
+                        </picture>
+                        <figcaption>
+                            <p>Latest News</p>
+                            <h2>BODY BUILDING BEST FOR YOUR HEALTH </h2>
+                        </figcaption>
+                    </figure>                    
+                </div>
+                <div class="slide">
+                    <div class="slide active">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="img/banner-1-sm.webp">
+                            <img src="img/banner-1.webp" alt="" width="1530" height="580" class="img-resp" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="slide"></div>
+                <div class="pager">
+                    <ul class="flex">
+                        <li><a aria-label="1" class="active" href=""></a></li>
+                        <li><a aria-label="2" href=""></a></li>
+                        <li><a aria-label="3" href=""></a></li>
+                    </ul>
+                    <p> &larr; Lorem ipsum dolor &rarr; </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-3">
+        <div class="container">
+            <form action="/">
+            <div class="row">
+                <div class="col-2 col-m-12">
+                    <h3>SIGNUP TO NEWSLETTER</h3>
+                </div>
+                <div class="col-10 col-m-12">
+                    <div class="row">
+                        <div class="col-4 col-p-12"><input type="text" required placeholder="Enter Name" aria-label="Name"></div>
+                        <div class="col-4 col-p-12"><input type="email" required placeholder="Enter Email" aria-label="Email"></div>
+                        <div class="col-4 col-p-12"><button>SUBSCRIBE NOW</button></div>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
